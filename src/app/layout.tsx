@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
 import { Header } from '@/components/header'
+import { TopBarCupom } from '@/components/header/top-bar-cupom'
 import './globals.css'
 
 const integralCF = localFont({
@@ -9,6 +10,14 @@ const integralCF = localFont({
     {
       path: '../../public/fonts/Fontspring-DEMO-integralcf-bold.otf',
       weight: 'bold',
+    },
+    {
+      path: '../../public/fonts/Fontspring-DEMO-integralcf-extrabold.otf',
+      weight: '800',
+    },
+    {
+      path: '../../public/fonts/integralcf-heavy.otf',
+      weight: '900',
     },
   ],
   variable: '--font-integralcf',
@@ -49,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satoshi.variable} ${integralCF.variable}`}>
+        <TopBarCupom />
         <Header />
         {children}
       </body>

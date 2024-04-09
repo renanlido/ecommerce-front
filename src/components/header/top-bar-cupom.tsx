@@ -8,7 +8,7 @@ export function TopBarCupom() {
   const [showTopBarCupom, setShowTopBarCupom] = useState(true)
   return (
     <div
-      className={`mt-10 flex h-[34px] w-full items-center justify-between bg-black transition-all duration-700 md:px-28
+      className={`flex h-[34px] w-full items-center justify-between bg-black transition-all duration-700 md:px-28
          ${showTopBarCupom ? 'mt-0' : '-mt-9'}`}
     >
       <div className="flex w-full items-center justify-center">
@@ -21,7 +21,7 @@ export function TopBarCupom() {
       </div>
       <X
         onClick={() => setShowTopBarCupom(false)}
-        className="mr-auto hidden cursor-pointer text-white md:flex"
+        className="mr-auto hidden cursor-pointer text-white md:block"
       />
     </div>
   )
