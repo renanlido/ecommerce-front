@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+
+import { Header } from '@/components/header'
 import './globals.css'
 
 const integralCF = localFont({
@@ -23,6 +25,10 @@ const satoshi = localFont({
       weight: 'normal',
     },
     {
+      path: '../../public/fonts/Satoshi-Medium.ttf',
+      weight: 'normal',
+    },
+    {
       path: '../../public/fonts/Satoshi-Light.ttf',
       weight: '100',
     },
@@ -43,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satoshi.variable} ${integralCF.variable}`}>
+        <Header />
         {children}
       </body>
     </html>
