@@ -9,10 +9,10 @@ export function Header() {
     <div className="fixed flex h-16 w-full items-center justify-center bg-white px-4 md:h-24">
       <MenuMobile />
       <div className="ml-2 flex w-full max-w-7xl items-center justify-between space-x-10">
-        <h1 className="font-integralCF -mt-1 cursor-pointer text-2xl font-bold md:text-[32px]">
+        <h1 className="-mt-1 cursor-pointer font-integralCF text-2xl font-bold md:text-[32px]">
           SHOP.CO
         </h1>
-        <div className="font-satoshi hidden flex-1 items-center space-x-4 md:flex">
+        <div className="hidden flex-1 items-center space-x-4 font-satoshi md:flex">
           <CustonDropdownMenu />
 
           <Link href={'#'}>On Sales</Link>
