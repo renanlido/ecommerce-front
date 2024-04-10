@@ -2,14 +2,16 @@
 
 import { X } from 'lucide-react'
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from 'react'
+
+import { useTopBarCupomStore } from '@/store/top-bar-cupom-store'
 
 export function TopBarCupom() {
-  const [showTopBarCupom, setShowTopBarCupom] = useState(true)
+  const { isTopBarCupomVisible, setIsTopBarCupomVisible } =
+    useTopBarCupomStore()
   return (
     <div
       className={`flex h-[34px] w-full items-center justify-between bg-black transition-all duration-700 md:px-28
-         ${showTopBarCupom ? 'mt-0' : '-mt-9'}`}
+         ${isTopBarCupomVisible ? 'mt-0' : '-mt-9'}`}
     >
       <div className="flex w-full items-center justify-center">
         <span className="font-satoshi text-xs font-light text-white md:text-sm">
@@ -20,7 +22,7 @@ export function TopBarCupom() {
         </span>
       </div>
       <X
-        onClick={() => setShowTopBarCupom(false)}
+        onClick={() => setIsTopBarCupomVisible(false)}
         className="mr-auto hidden cursor-pointer text-white md:block"
       />
     </div>

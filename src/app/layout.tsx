@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
 import { Header } from '@/components/header'
-import { TopBarCupom } from '@/components/header/top-bar-cupom'
 import './globals.css'
 
 const integralCF = localFont({
@@ -58,7 +57,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satoshi.variable} ${integralCF.variable}`}>
-        <TopBarCupom />
         <Header />
         {children}
       </body>
