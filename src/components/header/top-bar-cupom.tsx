@@ -16,7 +16,7 @@ export function TopBarCupom() {
       <div className="flex w-full items-center justify-center">
         <span className="font-satoshi text-xs font-light text-white md:text-sm">
           Sign up and get 20% off to your first order.
-          <a href="#" className="ml-2 text-xs font-bold md:text-sm">
+          <a href="#" className="ml-2 text-xs font-bold underline md:text-sm">
             Sign Up Now
           </a>
         </span>
