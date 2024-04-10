@@ -18,11 +18,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        satoshi: ['var(--font-satoshi)'],
+        integralCF: ['var(--font-integralcf)'],
+      },
       colors: {
-        fontFamily: {
-          satoshi: ['var(--font-satoshi)'],
-          integralCF: ['var(--font-integralcf)'],
-        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
