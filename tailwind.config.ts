@@ -19,8 +19,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        integralcf: ['IntegralCF', 'sans-serif'],
-        satoshi: ['Satoshi', 'sans-serif'],
+        satoshi: ['var(--font-satoshi)'],
+        integralCF: ['var(--font-integralcf)'],
       },
       colors: {
         border: 'hsl(var(--border))',
