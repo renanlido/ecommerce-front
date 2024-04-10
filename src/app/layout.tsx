@@ -10,6 +10,14 @@ const integralCF = localFont({
       path: '../../public/fonts/Fontspring-DEMO-integralcf-bold.otf',
       weight: 'bold',
     },
+    {
+      path: '../../public/fonts/Fontspring-DEMO-integralcf-extrabold.otf',
+      weight: '800',
+    },
+    {
+      path: '../../public/fonts/integralcf-heavy.otf',
+      weight: '900',
+    },
   ],
   variable: '--font-integralcf',
 })
