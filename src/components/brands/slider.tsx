@@ -24,10 +24,6 @@ const brandImages = [
   { id: 5, name: 'zara', src: zara },
 ]
 
-// interface SliderProps {
-//   numSlides: number
-// }
-
 export function Slider() {
   function windowSize() {
     if (typeof window === 'undefined') return 1
