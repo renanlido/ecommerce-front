@@ -6,6 +6,6 @@ interface RattingStore {
 }
 
 export const useRattingStore = create<RattingStore>((set) => ({
-  ratting: 4.8,
+  ratting: 1.9,
   setRatting: (ratting) => set({ ratting }),
 }))
