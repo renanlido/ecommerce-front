@@ -8,7 +8,7 @@ export function HalfStar() {
     <svg
       width={windowSize() > 640 ? '9' : '7'}
       height={windowSize() > 640 ? '17' : '14'}
-      viewBox="0 0 10 17"
+      viewBox="0 0 8 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
