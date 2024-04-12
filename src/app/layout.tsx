@@ -25,20 +25,24 @@ const integralCF = localFont({
 const satoshi = localFont({
   src: [
     {
-      path: '../../public/fonts/Satoshi-Bold.ttf',
-      weight: 'bold',
+      path: '../../public/fonts/Satoshi-Bold.otf',
+      weight: '700',
     },
     {
-      path: '../../public/fonts/Satoshi-Regular.ttf',
+      path: '../../public/fonts/Satoshi-Regular.otf',
       weight: 'normal',
     },
     {
-      path: '../../public/fonts/Satoshi-Medium.ttf',
+      path: '../../public/fonts/Satoshi-Medium.otf',
       weight: 'normal',
     },
     {
-      path: '../../public/fonts/Satoshi-Light.ttf',
+      path: '../../public/fonts/Satoshi-Light.otf',
       weight: '100',
+    },
+    {
+      path: '../../public/fonts/Satoshi-Black.otf',
+      weight: '900',
     },
   ],
   variable: '--font-satoshi',
