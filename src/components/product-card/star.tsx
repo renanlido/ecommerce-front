@@ -7,8 +7,8 @@ export function Star() {
   }
   return (
     <svg
-      width={windowSize() > 640 ? '17' : '14'}
-      height={windowSize() > 640 ? '17' : '14'}
+      width={windowSize() > 640 ? '18.5' : '15.5'}
+      height={windowSize() > 640 ? '18.5' : '15.5'}
       viewBox="0 0 17 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

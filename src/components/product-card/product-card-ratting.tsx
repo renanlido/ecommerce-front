@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from 'react'
 
-import { useRattingStore } from '@/store/ratting-store'
-
 import { HalfStar } from './half-star'
 import { Star } from './star'
 
-export function ProductCardRatting() {
-  const { ratting } = useRattingStore()
+interface ProductCardRattingProps {
+  ratting: number
+}
+
+export function ProductCardRatting({ ratting }: ProductCardRattingProps) {
   const [roundedRatting, setRoundedRatting] = useState(ratting)
 
   useEffect(() => {
